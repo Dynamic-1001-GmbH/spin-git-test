@@ -7,6 +7,6 @@ data:
   config.json: |
     {
       "APP_NAME": "MyApp",
-      "APP_ENV": "production",
+      "APP_ENV": "test",
       "LOG_LEVEL": "info"
     }
