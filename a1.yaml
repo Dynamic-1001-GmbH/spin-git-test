@@ -43,7 +43,7 @@ spec:
         - env:
             - name: NODE_ENV
               value: test
-            - name: TIME_NOW
+            - name: TIME
               value: current
           image: 'nginx:latest'
           name: pod-nginx
