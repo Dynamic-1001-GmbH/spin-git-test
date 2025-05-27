@@ -1,5 +1,5 @@
 {
   "APP_NAME": "MyApp",
-  "APP_ENV": "productiotestn",
+  "APP_ENV": "production",
   "LOG_LEVEL": "info"
 }
