@@ -1,52 +1,12 @@
 apiVersion: v1
-kind: Service
+kind: ConfigMap
 metadata:
-  labels:
-    role: svc-nginx
-  name: svc-nginx
+  name: test
   namespace: default
-spec:
-  ports:
-    - name: nginx
-      port: 7612
-      protocol: TCP
-      targetPort: 80
-  selector:
-    instance: pod-nginx
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: pod-nginx
-  namespace: default
-spec:
-  selector:
-    matchLabels:
-      instance: pod-nginx
-  strategy:
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 0
-    type: RollingUpdate
-  template:
-    metadata:
-      annotations:
-        sidecar.istio.io/inject: 'true'
-      labels:
-        ca-access-cb: 'true'
-        ca-access-es: 'true'
-        ca-access-minio: 'true'
-        instance: pod-nginx
-        role: pod-nginx
-    spec:
-      containers:
-        - env:
-            - name: NODE_ENV
-              value: test
-            - name: TIME
-              value: current
-          image: 'nginx:latest'
-          name: pod-nginx
-          ports:
-            - containerPort: 80
-
+data:
+  config.json: |
+    {
+      "APP_NAME": "MyApp",
+      "APP_ENV": "test123",
+      "LOG_LEVEL": "info"
+    }
