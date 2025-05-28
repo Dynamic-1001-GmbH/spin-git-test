@@ -1,5 +1,5 @@
 {
   "APP_NAME": "MyApp2",
-  "APP_ENV": "production",
+  "APP_ENV": "production-123",
   "LOG_LEVEL": "info"
 }
