@@ -8,5 +8,5 @@ data:
     {
       "APP_NAME": "MyApp",
       "APP_ENV": "test-2",
-      "LOG_LEVEL": "error"
+      "LOG_LEVEL": "debug"
     }
