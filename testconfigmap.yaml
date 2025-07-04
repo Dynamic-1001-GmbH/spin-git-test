@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  app_name: hey-there # This is a test configmap
+  app_env: test-env
+  log_level: info
+kind: ConfigMap
+metadata:
+  annotations:
+    strategy.spinnaker.io/versioned: "false"
+  namespace: ns-prod
