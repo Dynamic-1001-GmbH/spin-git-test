@@ -2,7 +2,7 @@ apiVersion: v1
 data:
   app_name: hey-there # This is a test configmap
   app_env: test-env
-  log_level: debug
+  log_level: info
 kind: ConfigMap
 metadata:
   annotations:
