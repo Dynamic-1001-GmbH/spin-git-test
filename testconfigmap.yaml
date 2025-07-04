@@ -7,4 +7,5 @@ kind: ConfigMap
 metadata:
   annotations:
     strategy.spinnaker.io/versioned: "false"
+  name: testconfigmap
   namespace: ns-prod
