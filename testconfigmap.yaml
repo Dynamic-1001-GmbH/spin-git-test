@@ -2,7 +2,7 @@ apiVersion: v1
 data:
   app_name: hey-there # This is a test configmap
   app_env: test-env
-  log_level: error # Changed from 'info' to 'error'
+  log_level: debug
 kind: ConfigMap
 metadata:
   annotations:
