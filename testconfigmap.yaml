@@ -1,6 +1,6 @@
 apiVersion: v1
 data:
-  app_name: hey-there2 # This is a test configmap
+  app_name: hey-there3 # This is a test configmap
   app_env: test-env
   log_level: debug
 kind: ConfigMap
